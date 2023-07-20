@@ -17,11 +17,23 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
     <script>
-    $('button').click(function(){
-            $('h1').hide()
-            $('.head').hide()
-            $('#hello').hide()
+        
+        $(document).ready(function(){     // we write document.ready function so that it waits until the page is loaded
+            $('button').click(function(){
+            // $('h1').hide()  
+            // $('.head').hide()
+            // $('#hello').hide()
         })
+
+        })
+    
+        // There are 3 main types of selectors in jquery
+        /*
+            - element selector -- // $('h1').hide()  
+            - id selector -- // $('#hello').hide()
+            - class selector -- // $('.head').hide()
+        */
+
     
     </script>
 </body>
