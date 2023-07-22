@@ -47,7 +47,7 @@
         
         $(document).ready(function() {
             $('#hide').click(function(){
-                 $('h3').hide('slow', function () {
+                 $('h3').fadeToggle('slow', function () {     // this is a call back function
                     alert ("I am a Full Stack Web Developer")
                 })
             })
