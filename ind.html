@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery #1</title>
+</head>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<body>
+
+    <h1>Satyam Karn | Dev Cadet</h1>
+    <h3>Full Stack Web Developer</h3>
+
+    <button id="btn">Click here to Login</button>
+    <button id="reset">Reset</button>
+    <button id="hide">Hide</button>
+
+
+    
+
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("h1").animate({
+                    height : "150px",
+                    width: "100px",
+                    transition: "0.5s"
+
+
+                })
+            })
+
+        })
+
+        $(document).ready(function(){
+            $('#reset').click(function(){
+                $('h1').animate({
+                    height : "20px",
+                    width : "400px",
+                    // transition : "0.1s"
+                    speed : "100"
+
+
+                })
+            })
+        })
+        
+        $(document).ready(function() {
+            $('#hide').click(function(){
+                 $('h3').hide('slow', function () {
+                    alert ("I am a Full Stack Web Developer")
+                })
+            })
+        })
+    </script>
+
+
+
+   
+</body>
+</html>
